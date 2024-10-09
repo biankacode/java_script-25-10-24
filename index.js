@@ -34,3 +34,17 @@ a === b || a != b; /* si a es igual, igual O a es diferente*/  /* true */
 !(a === b);        /* se valida primero lo de los parentesis,y si querenos 
                     cambiar el valor del resultado,si da true podemos cambiarlo a false */
 
+/* Estructuras de control : IF */
+
+let usuario = "Bianca"
+let nombre ="Diego"
+
+if (nombre === "Diego" || usuario === "Bianca") {
+    console.log("Hola Diego");
+    console.log("Hola Bianca");
+} else if (usuario === "Bianca"){
+    console.log("Hola Bianca");
+    
+} else{
+    console.log("No te conozco");
+}
