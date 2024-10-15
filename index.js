@@ -15,6 +15,20 @@ const a = 10;
 const b = 20; 
 const c = "10";
 
+const numeroJugador = parseInt(prompt("Elije un numero del 1 al 10"))
+let residuo  = numeroJugador % 2;
+
+if (residuo === 1) {
+    console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
+}
+else if (numeroJugador === 2){
+ console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
+ 
+}else{
+    console.log(`El numero que escojiste no es primo:  ${numeroJugador} `);
+}
+    
+
 a == b; /* false */
 a === b; /* faslse */
 a != b; /* true */
@@ -49,3 +63,4 @@ if (nombre === "Diego" ) {  /* si esta condicion se cumple imprime */
 } else{/* si ninguna de las dos se cumple */
     console.log("No te conozco");
 }
+
