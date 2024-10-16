@@ -1,12 +1,19 @@
-/* ⁠Bienvenida a la Galaxia
-Descripción: Bienvenido, Padawan. La galaxia es vasta, y tu primera tarea es presentarte al Consejo Jedi.
+
+/* 2.⁠ ⁠Cálculo de la Edad de Yoda
+Descripción:
+Yoda tiene más de 900 años, pero ¿exactamente cuántos? Vamos a calcular su edad.
 Instrucciones:
-Escribe un programa que imprima el mensaje: "Que la Fuerza te acompañe, [tu nombre]." Sustituye "[tu nombre]" por el tuyo.
+Escribe un programa que pida al usuario la edad de Yoda cuando comenzó su entrenamiento 
+Jedi y la edad que tiene ahora. Calcula cuántos años han pasado desde que comenzó su entrenamiento.
 Pista:
-Usa una función print() para mostrar un mensaje en la consola. Reemplaza el texto entre comillas por tu nombre.
+Solicita dos números al usuario, réstalos y muestra el resultado usando print().
+
  */
 
-let bienvenida = prompt("Dime como te llamas")
-let nom  = bienvenida
-alert("Que la fuerza te acompañe " + nom );
+let edadYoda = prompt("Cuantos años tiene Yoda?")
+let entrenamientoYoda = prompt("Cuantos años lleva entrenando Yoda?") 
 
+let añosEdad = edadYoda
+let añosEntrenamiento = entrenamientoYoda
+
+alert(`Yoda tiene ${edadYoda - entrenamientoYoda} años de edad`)
