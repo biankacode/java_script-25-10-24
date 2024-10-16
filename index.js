@@ -1,6 +1,40 @@
-console.log("si sirve/*  */");
-/* Operadores de comparación */
+/* Ejercicio: Determinar si un número es primo */
+const numeroJugador = parseInt(prompt("Elije un numero del 1 al 10"))
+let residuo  = numeroJugador % 2;
 
+if (residuo === 1) {
+    console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
+}
+else if (numeroJugador === 2){
+console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
+
+}else{
+    console.log(`El numero que escojiste no es primo:  ${numeroJugador} `);
+}
+/* Ejercicio: Contar números positivos y negativos */
+
+/* prompt(): Solicita al usuario que ingrese una cadena de texto (en este caso, una lista de números separados por comas).
+split(','): Divide la entrada por las comas, obteniendo un array de cadenas.
+trim(): Elimina posibles espacios en blanco alrededor de los números.
+map(num => parseInt(num)): Convierte cada cadena en un número entero. */
+let numUsuario = prompt("Ingresa una lista de 10 numeros separados por comas") 
+
+let listaNum = numUsuario.split(',').map(num => parseInt(num.trim()))
+console.log(listaNum);
+
+let numpositivos = []
+let numnegativos = []
+
+if (listaNum <= 0) {
+    
+}
+for (numnegativos = 1; listaNum < 0 ; numnegativos++) {
+ console.log(numnegativos);
+ 
+ 
+}
+
+/* Operadores de comparación */
 /* 
 *  ==  :igualdad valor 
 *  === :igualdad valor y tipo de darto
@@ -14,20 +48,6 @@ console.log("si sirve/*  */");
 const a = 10;
 const b = 20; 
 const c = "10";
-
-const numeroJugador = parseInt(prompt("Elije un numero del 1 al 10"))
-let residuo  = numeroJugador % 2;
-
-if (residuo === 1) {
-    console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
-}
-else if (numeroJugador === 2){
- console.log(`El numero que escojiste es ${numeroJugador}  por lo tanto es un numero primo`);
- 
-}else{
-    console.log(`El numero que escojiste no es primo:  ${numeroJugador} `);
-}
-    
 
 a == b; /* false */
 a === b; /* faslse */
