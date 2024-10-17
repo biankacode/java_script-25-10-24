@@ -1,23 +1,14 @@
-/* 3.⁠ ⁠Identificación del Lado Oscuro
+/* 4.⁠ ⁠Conversión de Parsec a Años Luz
 Descripción:
-La Orden Jedi necesita identificar a aquellos que están en el lado oscuro de la Fuerza.
- Tu tarea es decidir si un personaje pertenece al lado oscuro según el poder que tenga.
+Han Solo siempre presumía de que el Halcón Milenario hizo el Kessel Run en menos de 12 parsecs. 
+Ahora es tu turno de calcular cuántos años luz son esos 12 parsecs.
 Instrucciones:
-Escribe un programa que reciba un número (representando el poder de la Fuerza de un personaje).
- Si el número es divisible por 2, muestra "El personaje está en el Lado Oscuro". Si no lo es, muestra 
- "El personaje está en el Lado Luminoso".
+Escribe un programa que convierta una cantidad dada en parsecs a años luz.
+ Un parsec equivale a aproximadamente 3.26 años luz.
 Pista:
-Usa el operador % para verificar si un número es divisible por 2.
- */
+Multiplica el número de parsecs por 3.26 para obtener los años luz. */
 
-let seleccionPesonaje = parseInt(prompt("Cual es tu personaje favorito, 1: Palpatine, 2: Darth Vader, 3: Conde Dooku, 4: Yoda, 5: Darth Maul, 6: Chewbacca "))
+let parsecs = parseInt(prompt("Cuantos parses ha viajado el Halcón Milenario?"))
 
-let personajes = seleccionPesonaje % 2
-
-if(personajes === 0){
- alert("El personaje está en el Lado Luminoso");
-} else if(personajes === 1 ) {
-    alert("El personaje está en el Lado Oscuro");
-} else{
-    alert("Escoje un personaje");  
-}
+let añosLuz = parsecs * 3.26
+console.log("Has viajado " + añosLuz + " años luz");
