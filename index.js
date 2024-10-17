@@ -1,19 +1,23 @@
-
-/* 2.⁠ ⁠Cálculo de la Edad de Yoda
+/* 3.⁠ ⁠Identificación del Lado Oscuro
 Descripción:
-Yoda tiene más de 900 años, pero ¿exactamente cuántos? Vamos a calcular su edad.
+La Orden Jedi necesita identificar a aquellos que están en el lado oscuro de la Fuerza.
+ Tu tarea es decidir si un personaje pertenece al lado oscuro según el poder que tenga.
 Instrucciones:
-Escribe un programa que pida al usuario la edad de Yoda cuando comenzó su entrenamiento 
-Jedi y la edad que tiene ahora. Calcula cuántos años han pasado desde que comenzó su entrenamiento.
+Escribe un programa que reciba un número (representando el poder de la Fuerza de un personaje).
+ Si el número es divisible por 2, muestra "El personaje está en el Lado Oscuro". Si no lo es, muestra 
+ "El personaje está en el Lado Luminoso".
 Pista:
-Solicita dos números al usuario, réstalos y muestra el resultado usando print().
-
+Usa el operador % para verificar si un número es divisible por 2.
  */
 
-let edadYoda = prompt("Cuantos años tiene Yoda?")
-let entrenamientoYoda = prompt("Cuantos años lleva entrenando Yoda?") 
+let seleccionPesonaje = parseInt(prompt("Cual es tu personaje favorito, 1: Palpatine, 2: Darth Vader, 3: Conde Dooku, 4: Yoda, 5: Darth Maul, 6: Chewbacca "))
 
-let añosEdad = edadYoda
-let añosEntrenamiento = entrenamientoYoda
+let personajes = seleccionPesonaje % 2
 
-alert(`Yoda tiene ${edadYoda - entrenamientoYoda} años de edad`)
+if(personajes === 0){
+ alert("El personaje está en el Lado Luminoso");
+} else if(personajes === 1 ) {
+    alert("El personaje está en el Lado Oscuro");
+} else{
+    alert("Escoje un personaje");  
+}
