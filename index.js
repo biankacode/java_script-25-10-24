@@ -1,14 +1,40 @@
-/* 4.⁠ ⁠Conversión de Parsec a Años Luz
-Descripción:
-Han Solo siempre presumía de que el Halcón Milenario hizo el Kessel Run en menos de 12 parsecs. 
-Ahora es tu turno de calcular cuántos años luz son esos 12 parsecs.
+/* Ejercicio: Contar números positivos y negativos
+Descripción: Escribe un programa que reciba una lista de números enteros 
+y cuente cuántos de ellos son positivos y cuántos son negativos. Al final,
+el programa debe mostrar ambos conteos.
 Instrucciones:
-Escribe un programa que convierta una cantidad dada en parsecs a años luz.
- Un parsec equivale a aproximadamente 3.26 años luz.
+Pide al usuario que ingrese una lista de números separados por comas.
+Usa un ciclo for para recorrer la lista de números.
+Usa la estructura condicional if para verificar si cada número es positivo o negativo.
+Lleva la cuenta de cuántos números positivos y negativos hay.
+Al final, imprime el resultado.
 Pista:
-Multiplica el número de parsecs por 3.26 para obtener los años luz. */
+Un número es positivo si es mayor que 0 y es negativo si es menor que 0.
+ */
 
-let parsecs = parseInt(prompt("Cuantos parses ha viajado el Halcón Milenario?"))
+let numeros = prompt("ingresa 10 numeros positivos y negativos, separados por comas");
+let conversionDeNumeros = numeros.split(",").map(numeros => parseInt(numeros.trim()));
+let listaNumeros = conversionDeNumeros
+/* let listaNumeros = [3, -1, 5, -2, 7, -6, 0, 8];  */
 
-let añosLuz = parsecs * 3.26
-console.log("Has viajado " + añosLuz + " años luz");
+let numPositivos = []
+let numNegativos = []
+
+for (let i = 0; i < listaNumeros.length; i++) {
+    if (listaNumeros[i] > 0) {
+        numPositivos.push(listaNumeros[i])
+    } else if (listaNumeros[i] < 0){
+        numNegativos.push(listaNumeros[i]) 
+    }
+}
+
+console.log("Lista de numeros Negativos: "+ numNegativos);
+console.log("Lista de numeros Positivos: "+ numPositivos);
+
+
+/*    let num = [ -9, -12, -4, -6, -2]
+
+   for(let i = 0; i < num ; i++ ){
+    console.log(i);
+    
+   } */
