@@ -4,6 +4,7 @@ const  prdoductName = "Smarpone"
 const price = 499
 const brand = "TechCo"
 
+
 function getProductoDetalist() {
     const prdoductName = "Laptop"
     const price = 899 
