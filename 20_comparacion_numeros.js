@@ -12,8 +12,3 @@ function comparaNumeros(num0, num1) {
     return 
 }
 comparaNumeros(40,229)
-/* 
-for (let i = 0; i ; i++) {
-    const element = array[i];
-    
-}  */
